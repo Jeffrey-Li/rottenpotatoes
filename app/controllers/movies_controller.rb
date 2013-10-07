@@ -7,8 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @by = params[:by]
-    @movies = Movie.order(params[:by]).all
+    @movies = Movie.all
   end
 
   def new
