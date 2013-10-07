@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all.sort_by { |r| r.bing}
+    @movies = Movie.all
   end
 
   def new
