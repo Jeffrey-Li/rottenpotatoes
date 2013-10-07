@@ -8,10 +8,6 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
-    sort = params[:sort] || session[:sort]
-    if sort == 'title'
-      ordering = {:order => :title}
-    end
   end
 
   def new
