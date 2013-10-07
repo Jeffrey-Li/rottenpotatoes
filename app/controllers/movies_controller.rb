@@ -12,8 +12,6 @@ class MoviesController < ApplicationController
     if sort == 'title'
       ordering = {:order => :title}
     end
-end
-
   end
 
   def new
