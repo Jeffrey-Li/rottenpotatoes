@@ -5,5 +5,5 @@ module MoviesHelper
   end
   def hilite_helper	
     if params[:sort] == 'sortBy' then 'hilite' end 
-  end
+  ends
 end
