@@ -6,6 +6,7 @@
     %tr
       %th{ :class => if params[:sort] == 'sortBy' then 'hilite' end }
          = link_to "Movie Title", movies_path(:sort => 'title'), :id => "title_header"
+      %th Movie Title
       %th Rating
       %th Release Date
       %th More Info
